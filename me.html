@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Craig A Stueber</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+2|Baloo+Chettan+2|Fredoka+One|Press+Start+2P|VT323&display=swap" rel="stylesheet">
+	<style type="text/css">
+		[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  .col-1-m {width: 8.33%;}
+  .col-2-m {width: 16.66%;}
+  .col-3-m {width: 25%;}
+  .col-4-m {width: 33.33%;}
+  .col-5-m {width: 41.66%;}
+  .col-6-m {width: 50%;}
+  .col-7-m {width: 58.33%;}
+  .col-8-m {width: 66.66%;}
+  .col-9-m {width: 75%;}
+  .col-10-m {width: 83.33%;}
+  .col-11-m {width: 91.66%;}
+  .col-12-m {width: 100%;}
+}
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+}
+.hide{
+	display: none;
+}
+* {
+  box-sizing: border-box;
+}
+#projects{
+	position: relative;
+	font-size: 60px;
+	padding-top: 150px;
+	margin-top: 400px;
+	
+}
+#cs{
+	position: fixed;
+	float: left;
+	opacity: .5;
+	width: 100px;
+	border-radius: 100px;
+}
+body{
+	font-family: 'Baloo Chettan 2', cursive;
+	color: rgb(6, 41, 117);
+}
+#us{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 25%;
+	border-radius: 100px;
+}
+.text{
+	text-align: center;
+}
+#div1{
+	width: 100%;
+	padding: 5%;
+	
+}
+#div2{
+	background-color: rgb(164, 192, 252);
+	width: 100%;
+	padding: 5%;
+}
+.div3col{
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	border: 1px solid rgb(152,161,212);
+	border-radius: 20px;
+	height: 100%;
+	margin-top: 5px;
+}
+#sunset{
+	position: relative;
+	width: 40%;
+	border-radius: 20px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#div5{
+	padding: 10px;
+}
+.reasons{
+	display: grid;
+	border: 1px solid rgb(152,161,212);
+	height: 250px;
+	border-radius: 20px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.div4{
+	background-color: white;
+}
+.Work{
+	background-color: white;
+}
+.work{
+	display: grid;
+	border-radius: 20px;
+	border: 1px solid rgb(152,161,212);
+	height: 200px;
+	margin-top: 10px;
+	padding: 0;
+	margin-bottom: 10px;
+	
+}
+.workDiv{
+	grid-area: 1/1;
+	position: relative;
+}
+.reasonPar{
+	height: fill;
+	width: fill;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(164, 192, 252);
+	grid-area: 1/1;
+	border-radius: 20px;
+	display: none;
+	font-size: 14px;
+}
+.reasonHead{
+	grid-area:1/1;
+	position: relative;
+	margin-top: 50px;
+}
+.intro{
+	font-family: 'Fredoka One', cursive;
+}
+.notBold{
+	font-weight: 400;
+}
+#roids{
+	font-family: 'VT323', monospace;
+}
+.skillList{
+	padding: 0;
+	margin: 0;
+}
+.skillblock{
+	font-family: 'Baloo 2', cursive;
+	text-decoration: underline;
+}
+.backLight{
+	font-size: 40px;
+	color: black;
+
+}
+.workButton{
+	border: none;
+	border-radius: 10px;
+	background-color:  rgb(6, 41, 117);
+	color: rgb(164, 192, 252) ;
+}
+.footer{
+
+	margin-top: 10px;
+	width: 100%;
+	background-color:  rgb(164, 192, 252) ;
+	padding: 20px;
+	text-align: center;
+	overflow: auto;
+}
+#asteroids{
+	background-image: url("asteroid.jpg");
+	background-size: cover;
+	font-size: 25px;
+	color: white;
+}
+#color{
+	position: relative;
+	background-image: url("rgb1.png");
+	background-size: 200px;
+	background-repeat: no-repeat;
+	text-align: right;
+	font-size: 22px;
+
+}
+.gameButton{
+	border: none;
+	font-family: 'VT323', monospace;
+
+}
+.asteroidinfo{
+	font-size: 20px;
+	font-family: 'VT323', monospace;
+	height: fill;
+	width: fill;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: black;
+	grid-area: 1/1;
+	display: none;
+}
+.colorButton{
+	position: relative;
+	display: block;
+	margin-left: 60%;
+	width: 30%;
+	border: none;
+	height: 20px;
+}
+.colorinfo{
+	height: fill;
+	width: fill;
+	margin: 0;
+	padding: 0;
+	grid-area: 1/1;
+	border-radius: 20px;
+	display: none;
+	font-size: 14px;
+}
+#div6{
+	margin-bottom: 10px;
+}
+#tetris{
+	background-image: url("tetris.jpg");
+	background-size: cover;
+}
+.infobox{
+	text-align: center;
+}
+.close{
+	position: relative;
+	width: 20px;
+	top: 5px;
+	left: 5px;
+}
+#dice{
+	margin-top: 0;
+	padding-top: 0;
+	color: black;
+}
+#dicebox{
+	background-image: url("dice.jpg");
+	background-size: cover;
+}
+#diceButton{
+	border: none;
+	
+}
+
+.solmed{
+	width: 60px;
+}
+#mainFoot{
+	line-height: 20px;
+	margin-top: 0px;
+}
+.comingSoon{
+	line-height: 10px;
+	text-align: center;
+	background-image: url("comingsoon.png");
+	background-size: cover;
+	border-radius: 20px;
+}
+#things{
+	text-align: center
+}
+	</style>
+</head>
+<body>
+		<img id='cs' src="logo.jpg">
+	<div class="textWhite text" id="div1">
+		<h1 class='intro notBold'>Artist &nbsp;- &nbsp;Web Developer &nbsp;- &nbsp;  Full Stack Programer</h1>
+		<p>I've been an artist all my life and finally found my medium in coding.</p>
+		<img id='us' src="family.jpg" alt="FamilyPhoto">
+	</div>
+	<div class='textBlue text' id="div2">
+		<h1 class='intro notBold'>Hi, my name is Craig. Nice to meet you.</h1>
+		<p>Let me tell you a bit about myself. Having studied illustration at VCU & software engineering at Strayer, I have brought both passions together. With a strong skill set in Object Oriented Programming, specializing in Java and Javascript, I can create dynamic programs and web applications. A family man at heart, all of my ambitions are driven in the betterment of our lives. A native of Richmond VA, my wife and I own a house in Randolph, where we spend our days enjoying the city we love so much.</p>
+	</div>
+	<div class="text">
+		<div class="col-4 col-12-m div3col" id="div3-1">
+			<h1 class='intro notBold backLight'>Artist</h1>
+			<h1 class='skillblock'>Skill Sets</h1>
+			<div>
+				<h2 class='skillList'>UI</h2>
+				<h2 class='skillList'>UX</h2>
+				<h2 class='skillList'>Web Design</h2>
+			</div>
+			<h1 class='skillblock'>Software</h1>
+			<div>
+				<h3 class='skillList'>Photoshop</h3>
+				<h3 class='skillList'>Illustrator</h3>
+				<h3 class='skillList'>Lunacy</h3>
+				<h3 class='skillList'>WebFlow</h3>
+			</div>
+			
+		</div>
+		<div class="col-4 col-12-m div3col" id="div3-2">
+			<h1 class='intro notBold backLight'>Front-End</h1>
+			<h1 class='skillblock'>Skill Sets</h1>
+			<div>
+				<h2 class='skillList'>HTML</h2>
+				<h2 class='skillList'>CSS</h2>
+				<h2 class='skillList'>JavaScript</h2>
+			</div>
+			<h1 class='skillblock'>FrameWorks</h1>
+			<div>
+				<h3 class='skillList'>BootStrap</h3>
+				<h3 class='skillList'>CSS-Grid</h3>
+				<h3 class='skillList'>JQuery</h3>
+				<h3 class='skillList'>React</h3>
+			</div>
+			
+		</div>
+		<div class="col-4 col-12-m div3col" id="div3-3">
+			<h1 class='intro notBold backLight'>Back-End</h1>
+			<h1 class='skillblock'>Languages I speak well</h1>
+			<div>
+				<h2 class='skillList'>Java</h2>
+				<h2 class='skillList'>Python</h2>
+				<h2 class='skillList'>Node.js</h2>
+			</div>
+			<h1 class='skillblock'>Languages I can understand</h1>
+			<div>
+				<h3 class='skillList'>C++</h3>
+				<h3 class='skillList'>C#</h3>
+				<h3 class='skillList'>PHP</h3>
+				<h3 class='skillList'>C</h3>
+			</div>
+			
+		</div>
+	</div>
+	<div  class="text div4">
+		<h1 id='projects'>My Recent Projects</h1>
+		<div class="text Work">
+			<div class="col-4 col-6-m work" id='tetris'><div><button onclick="showstuff('tetrisinfo')">Click to learn More</button></div><div class='reasonPar animated zoomIn' id='tetrisinfo'><p>Made with pure JavaScript. Go ahead and give it a shot. To move the pieces use your arrow keys on your key board.</p><a href="https://craigstueber.com/tetris/tetris.html">Want to play?</a></div></div></div>
+			<div class="col-4 col-6-m work" id='color' ><div class='wordDiv reasonHead'><h1>Color Game &nbsp;</h1><button class='colorButton' onclick="showstuff('colorInfo')">Click to learn More</button></div><div class='infobox reasonPar animated flipInY' id='colorInfo'><a href='#color' onclick='showstuff("colorInfo")'><img class='close' src="close.png"></a><p>A simple RGB Color game which was my very first JavaScript project. It was also the project that made me realize just how much I love the language.</p><p>RGB is the light color spectrum, Red Green and Blue. At the top a random color is shown in the RGB form. {example RGB(255,49,65)} The goal of the game is to guess the color the numbers makes.</p><a href="https://craigstueber.com/game/game.html">Want to play?</a></div></div>
+			<div class="col-4 col-6-m work" id="asteroids" ><div><button class='gameButton' onclick="showstuff('roidinfo')">Click to learn More</button><h1 id='roids'>Asteroids</h1></div><div class='asteroidinfo animated flipInX' id='roidinfo'>The classic 1980's smash hit Asteroids. Remade in pure JavaScript (No libraries).<a href="https://craigstueber.com/asteroids/Asteroids.html" class='gameButton'>Want to play?</a></div></div>
+			<div class="col-4 col-6-m work" id='dicebox'><div><h1>Dice Game</h1> <button id='diceButton' onclick="showstuff('diceInfo')">Click to learn More</button></div><div class='infobox reasonPar animated flipInY' id='diceInfo'><p>A fun game of chance. Shows my understanding of object creation and JavaScript control.</p><a href="https://craigstueber.com/dice/Dice.html">Want to play?</a></div></div></div>
+			<div class="col-4 col-6-m work"><div class="comingSoon"><h1>RVA D&D Club</h1><h3>WebPage</h3></div></div>
+			<div class="col-4 col-6-m work"><div class="comingSoon"><h1>Local Artist</h1><h3>Web Page</h3></div></div>
+		</div>
+	</div>
+
+	<div id='div5'>
+		<img id="sunset" src="RVAsunset.jpg">
+	</div>
+	<div id='things'><h1>Here are somethings I bring to the table.</h1></div>
+
+	<div id="div6" class="text">
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Determination</h1><button class='workButton' onclick="showstuff('determination')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='determination'><p>When I decided to go back to school in my 30’s I knew it was going to be hard. I was learning something totally new. Each term I set a goal to be top of my class and throughout all my schooling have kept a 4.0 GPA.  I do not have the luxury of working part-time, or taking time off to study but I push myself to reach my goal.  On top of that, I have also completed multiple bootcamps and obtained multiple certifications because I am determined to be the best in my field. </p><button class='workButton' onclick='showstuff("determination")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Passion</h1><button class='workButton' onclick="showstuff('passion')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='passion' ><p>It may have taken me longer than some to realize my passion, but because of that it is more powerful than most people's as I have forged my passion out of hard work and dedication.  I have found my joy in getting lost in the code, working hours to make a program just right.  Having to set an alarm to make myself shut my laptop at night so I can wake up and take the kids to school in the morning.  True passion is something you find and forge and sacrifice for to create the change you want in life. </p><button class='workButton' onclick='showstuff("passion")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Work Ethic</h1><button class='workButton' onclick="showstuff('Ethic')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='Ethic'><p>I remember my grandfather once told me "I don't care what you are doing. Give it all of yourself." I have always tried to live that way no matter what I am doing I give it everything I have.   I always hold myself to the highest degree and push myself to go above and beyond in everything I do.</p><button class='workButton' onclick='showstuff("Ethic")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Problem Solver</h1><button class='workButton' onclick="showstuff('Solver')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='Solver'><p>Problem solving is a hobby for me and is one of the things that attracted me to coding in the first place.  I love to look at a hard problem or issue and work through it with logic and critical thinking to analyze the situation. With a results-oriented mind set I stay focused on getting to the root of the problem. One of the first dates I took my wife on was to an escape room here in RVA, we still go to as many as possible.</p><button class='workButton' onclick='showstuff("Solver")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Eye For Design</h1><button class='workButton' onclick="showstuff('Design')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='Design'><p>Even though I hear from other programmers that they don't think an artistic mind is needed to code, I have to disagree. Having an eye for design helps when working with UI, as well as creating clean code. Writing code to make it clean is like organizing random lines and making them into a work of art.  My art background sets me apart from most programmers  because I look at the world in a creative light and apply that to my programs.</p><button class='workButton' onclick='showstuff("Design")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Out of the Box Thinker</h1><button class='workButton' onclick="showstuff('Thinker')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='Thinker'><p>Having lived my whole life with dyslexia I have taught myself to look at things differently. This give me the ability to go beyond traditional approaches to issues and problems. I had an art professor once say to the class “What do you mean you can’t draw hands? Hands are no different than a jar or a face. Everything is just lines.” When I come upon a problem I think of this statement because nothing is impossible to figure out and everything is just lines waiting to be transformed.</p><button class='workButton' onclick='showstuff("Thinker")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons"><div class='reasonHead'><h1>Time Management</h1><button class='workButton' onclick="showstuff('Management')">Click to Learn More</button></div><div class='reasonPar animated flipInY' id='Management'><p>Going to an online school has really amplified my ability to manage time and organize my week.  Each week I schedule all of my assignments and commitments, then make sure to hold myself accountable and get everything done. On top of school, I have been working full-time and still have time to make dinner and play games with my family, while running a dungeons and dragons game and working on coding projects and my portfolio.</p><button class='workButton' onclick='showstuff("Management")'>Close</button></div></div>
+		<div class="col-3 col-6-m reasons" id="lifexp"><div class='reasonHead'><h1>Broad Life Experience</h1><button class='workButton' onclick="showstuff('Experience')">Click to Learn More</button></div>
+			<div class='reasonPar animated flipInY' id='Experience'><p>I have traveled all over this wonderful planet even though there is still so much more I want to see.  Having chosen this career later in life, I know that software development is what I want to do for the rest of my life.  My home and family are here in Richmond, VA, and I am looking for a long-term career I love, that feels like a family as well. </p><button class='workButton' onclick='showstuff("Experience")'>Close</button></div></div>
+	</div>
+
+
+	<footer class='footer'>
+	
+		<div id='mainFoot'><h1>Contact Me</h1>
+		<p>I hope to hear from you soon!</p></div>
+		<h4>Email: me@craigstueber.com</h4>
+		<h4>Phone: (804) 519-3626</h4>
+		<a href="https://github.com/CraigStueber"><img class='solmed' src="github.png"><br> Check out my GitHub <br></a>
+		<a href="https://www.linkedin.com/in/craigstueber/"><img class='solmed' src="linkedin.png"><br>Feel free to connect with me on LinkedIn</a>
+		<h4 class="intro">By flight: Third star to the right and straight 'til morning</h4>		
+	</footer>
+
+<script type="text/javascript">
+	function showstuff(id){
+	const i = document.getElementById(id);
+	var displayi = i.style.display;
+	if(displayi == 'block'){
+		i.style.display = 'none'
+	}else{
+		i.style.display = 'block'
+	}
+}</script>
+</body>
+</html>
